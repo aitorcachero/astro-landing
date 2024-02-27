@@ -1,0 +1,17 @@
+---
+import {sections} from '../helpers/const.js'
+---
+
+<section class="w-full min-h-auto-[480px] flex flex-col lg:flex-row justify-center items-center gap-10 p-4">
+  {sections.map(section => {
+    return (
+    <article class="w-[480px] h-[480px] border relative">
+      <img src={section.img} class="w-full h-full"/>
+
+    </article>
+    )
+  })}
+
+</section>
+
+

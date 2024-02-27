@@ -1,0 +1,18 @@
+---
+import {sections} from '../helpers/const.js'
+---
+
+<section class="w-full min-h-auto-[480px] flex flex-col flex-1 lg:flex-row justify-center items-center gap-4 p-4 bg-white">
+  {sections.map(section => {
+    return (
+    <article class="w-[480px] h-[480px] border relative overflow-hidden hover:cursor-pointer">
+      <img src={section.img} class="w-full h-full hover:scale-110 transition-all"/>
+      <p class="absolute text-2xl text-white text-center" style={{top: '50%', left:'50%', transform: 'translate(-50%, -50%)'}}>{section.name}</p>
+
+    </article>
+    )
+  })}
+
+</section>
+
+

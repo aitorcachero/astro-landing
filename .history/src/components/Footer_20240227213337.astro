@@ -1,0 +1,17 @@
+---
+import { sections, partners, footer } from '../helpers/const.js'
+---
+
+<footer class="h-96 flex flex-col justify-center items-center" style={{backgroundColor: '#2E5171'}}>
+  <section class="flex flex-row gap-10">
+    {partners.map(partner => {
+      return (
+        <a>
+          <img src={partner.img} class="h-24"/>
+        </a>
+      )
+    })}
+  </section>
+</footer>
+
+

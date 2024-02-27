@@ -1,0 +1,13 @@
+---
+const menu = ['About us', 'Brands', 'Sustainability', 'Careers', 'News']
+---
+
+<nav class="w-screen fixed h-24 flex flex-row bg-white top-0 justify-around items-center">
+  <img src='../../public/awwg.svg' alt="logo empresa" class="h-full p10"/>
+  <ul class="flex flex-row gap-10">
+
+    {menu.map((item, index) => {
+      return <a><li>{item}</li></a>
+    })}
+    </ul>
+    </nav>
