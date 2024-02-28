@@ -1,5 +1,5 @@
 const sections = [
-  { name: 'About us', img: '../../public/about-us-home-1.webp', url: '' },
+  { name: 'About us', img: '../../public/about-us-home-1.webp', url: '/about' },
   { name: 'Brands', img: '../../public/brands-home.webp', url: '/brands' },
   {
     name: 'Sustainability',
