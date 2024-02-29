@@ -69,7 +69,7 @@ const sustainability = [
   },
   {
     name: 'Partners',
-    img: '../../public/partners4-1.webp',
+    img: '../../public/partners4.webp',
     text: 'We ensure that our relationships with partners are built on mutual trust and respect, by working on ethical and transparent sourcing as part of our supply chain commitment within the textile industry.',
   },
   {

@@ -69,14 +69,14 @@ const sustainability = [
   },
   {
     name: 'Partners',
-    img: '../../public/partners4-1.webp',
+    img: '../../public/partners4.webp',
     text: 'We ensure that our relationships with partners are built on mutual trust and respect, by working on ethical and transparent sourcing as part of our supply chain commitment within the textile industry.',
   },
   {
     name: 'Places',
-    img: '../../public/places2.webp',
+    img: '../../public/sustainability1.webp',
     text: 'We aim to minimize our environmental impact by extending the use of renewable energy in all of our owned & operated offices, warehouses and stores, as well as introducing sustainable packaging.',
   },
 ];
 
-export { sections, partners, footer, sustainability };
+export { sections, partners, footer };

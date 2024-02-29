@@ -59,24 +59,24 @@ const footer = [
 const sustainability = [
   {
     name: 'Products',
-    img: '../../public/sustainability1.webp',
+    img: '',
     text: 'We aim to produce high-quality, sustainable fashion by maximising our use of responsible materials as BCI and recycled fibres, while minimising the use of water and hazardous chemicals. We have incorporated innovative technologies into our production process including, N22 and Eco one® and Wiser Wash Denim, as well supporting animal welfare through the use of responsible wool and leather products.',
   },
   {
     name: 'People',
-    img: '../../public/people1-2.webp',
+    img: '',
     text: 'In order to create a positive work culture that allows our employees to thrive, we are dedicated to fostering diversity and inclusion through specific training and initiatives.',
   },
   {
     name: 'Partners',
-    img: '../../public/partners4-1.webp',
+    img: '',
     text: 'We ensure that our relationships with partners are built on mutual trust and respect, by working on ethical and transparent sourcing as part of our supply chain commitment within the textile industry.',
   },
   {
     name: 'Places',
-    img: '../../public/places2.webp',
+    img: '',
     text: 'We aim to minimize our environmental impact by extending the use of renewable energy in all of our owned & operated offices, warehouses and stores, as well as introducing sustainable packaging.',
   },
 ];
 
-export { sections, partners, footer, sustainability };
+export { sections, partners, footer };
