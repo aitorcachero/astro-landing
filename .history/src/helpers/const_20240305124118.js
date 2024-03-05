@@ -400,5 +400,4 @@ export {
   divisions,
   values,
   executiveTeam,
-  history,
 };

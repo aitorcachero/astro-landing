@@ -1,0 +1,92 @@
+<style>
+  @property --num {
+    syntax: '<integer>';
+    initial-value: 0;
+    inherits: false;
+  }
+  @keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 40;
+    }
+  }
+</style>
+<div
+  class="flex justify-center items-center p-48"
+  style={{ backgroundColor: '#2E5172' }}
+>
+  <div class="flex">
+    <section class="grid gap-12 lg:grid-cols-4 lg:gap-16">
+      <article class="flex justify-center items-center">
+        <h2 class="text-center">
+          <span
+            class="flex tabular-nums text-white text-6xl text-center font-extrabold mb-2 transition-[_--num] duration-[3s] ease-out [counter-set:_num_var(--num)] supports-[counter-set]:before:content-[counter(num)]"
+            x-data="{ shown: false }"
+            x-intersect="shown = true"
+            :class="shown && '[--num:4500]'"
+          >
+            <span class="supports-[counter-set]:sr-only text-white">+4,500</span
+            >
+          </span>
+          <span
+            class="inline-flex font-semibold bg-clip-text text-transparent text-center bg-gradient-to-r from-indigo-500 to-indigo-300 mb-2"
+            >Employees worldwide</span
+          >
+        </h2>
+      </article>
+
+      <article>
+        <h2>
+          <span
+            class="flex tabular-nums text-white text-6xl text-center font-extrabold mb-2 transition-[_--num] duration-[3s] ease-out [counter-set:_num_var(--num)] supports-[counter-set]:before:content-[counter(num)]"
+            x-data="{ shown: false }"
+            x-intersect="shown = true"
+            :class="shown && '[--num:66]'"
+          >
+            <span class="supports-[counter-set]:sr-only">+66</span>
+          </span>
+          <span
+            class="inline-flex font-semibold bg-clip-text text-transparent text-center bg-gradient-to-r from-indigo-500 to-indigo-300 mb-2"
+            >Nationalities</span
+          >
+        </h2>
+      </article>
+
+      <article>
+        <h2>
+          <span
+            class="flex tabular-nums text-white text-6xl text-center font-extrabold mb-2 transition-[_--num] duration-[3s] ease-out [counter-set:_num_var(--num)] supports-[counter-set]:before:content-[counter(num)]"
+            x-data="{ shown: false }"
+            x-intersect="shown = true"
+            :class="shown && '[--num:500]'"
+          >
+            <span class="supports-[counter-set]:sr-only">500</span>
+          </span>
+          <span
+            class="inline-flex font-semibold bg-clip-text text-transparent text-center bg-gradient-to-r from-indigo-500 to-indigo-300 mb-2"
+            >Brand stores</span
+          >
+        </h2>
+      </article>
+
+      <article>
+        <h2>
+          <span
+            class="flex tabular-nums text-white text-6xl text-center font-extrabold mb-2 transition-[_--num] duration-[3s] ease-out [counter-set:_num_var(--num)] supports-[counter-set]:before:content-[counter(num)]"
+            x-data="{ shown: false }"
+            x-intersect="shown = true"
+            :class="shown && '[--num:5000]'"
+          >
+            <span class="supports-[counter-set]:sr-only">+5000</span>+
+          </span>
+          <span
+            class="inline-flex font-semibold bg-clip-text text-transparent text-center bg-gradient-to-r from-indigo-500 to-indigo-300 mb-2"
+            >Points of sale</span
+          >
+        </h2>
+      </article>
+    </section>
+  </div>
+</div>

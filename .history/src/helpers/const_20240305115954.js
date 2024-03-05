@@ -345,51 +345,6 @@ const executiveTeam = [
   },
 ];
 
-const history = [
-  {
-    date: '1989',
-    img: '/pepe-jeans-2.webp',
-    text: 'The iconic brand Pepe Jeans London, starts its distribution in Spain and Portugal.',
-    founded: 'Founded in 1973',
-  },
-  {
-    date: '1998',
-    img: '/tommy_logo.webp',
-    text: 'The distribution of Tommy Hilfiger in Spain and Portugal is incorporated to the group.',
-    founded: 'Founded in 1985',
-  },
-  {
-    date: '2002',
-    img: '/pepe-jeans-2.webp',
-    text: 'The global Pepe Jeans brand was acquired and the HQ were located in Barcelona and Madrid.',
-    founded: 'Founded in 1973',
-  },
-  {
-    date: '2006',
-    img: '/hackett-london.webp',
-    text: 'The Hackett Global brand, with offices in London, was acquired.',
-    founded: 'Founded in 1983',
-  },
-  {
-    date: '2013',
-    img: '/ck_logo.webp',
-    text: 'The group reaches an agreement with PVH, to become the official distributor of Calvin Klein in Spain and Portugal.',
-    founded: 'Founded in 1968',
-  },
-  {
-    date: '2016',
-    img: '/façonnable-logo-brands.webp',
-    text: 'Façonnable, with offices in Nice, was acquired by the Group.',
-    founded: 'Founded in 1950',
-  },
-  {
-    date: '2020',
-    img: '/awwg.svg',
-    text: 'To unify all the brands and teams the name of the Group was changed to AWWG.',
-    founded: '',
-  },
-];
-
 export {
   sections,
   partners,
@@ -399,6 +354,4 @@ export {
   brands,
   divisions,
   values,
-  executiveTeam,
-  history,
 };

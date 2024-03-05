@@ -1,0 +1,105 @@
+<style>
+  @property --num {
+    syntax: '<integer>';
+    initial-value: 0;
+    inherits: false;
+  }
+  @keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 40;
+    }
+  }
+</style>
+<div class="flex w-full" style={{ backgroundColor: '#2E5172' }}>
+  <div class="flex justify-center items-center p-48">
+    <section class="grid gap-12 lg:grid-cols-4 lg:gap-16">
+      <article>
+        <h2>
+          <span
+            class="flex tabular-nums text-white text-5xl font-extrabold mb-2 transition-[_--num] duration-[3s] ease-out [counter-set:_num_var(--num)] supports-[counter-set]:before:content-[counter(num)]"
+            x-data="{ shown: false }"
+            x-intersect="shown = true"
+            :class="shown && '[--num:4500]'"
+          >
+            <span class="supports-[counter-set]:sr-only text-white">+4,500</span
+            >
+          </span>
+          <span
+            class="inline-flex font-semibold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-300 mb-2"
+            >Variations</span
+          >
+        </h2>
+        <p class="text-sm text-slate-500">
+          Many desktop publishing packages and web page editors now use Pinky as
+          their default model text.
+        </p>
+      </article>
+
+      <article>
+        <h2>
+          <span
+            class="flex tabular-nums text-white text-5xl font-extrabold mb-2 transition-[_--num] duration-[3s] ease-out [counter-set:_num_var(--num)] supports-[counter-set]:before:content-[counter(num)]"
+            x-data="{ shown: false }"
+            x-intersect="shown = true"
+            :class="shown && '[--num:66]'"
+          >
+            <span class="supports-[counter-set]:sr-only">+66</span>
+          </span>
+          <span
+            class="inline-flex font-semibold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-300 mb-2"
+            >Lessons</span
+          >
+        </h2>
+        <p class="text-sm text-slate-500">
+          Many desktop publishing packages and web page editors now use Pinky as
+          their default model text.
+        </p>
+      </article>
+
+      <article>
+        <h2>
+          <span
+            class="flex tabular-nums text-slate-900 text-5xl font-extrabold mb-2 transition-[_--num] duration-[3s] ease-out [counter-set:_num_var(--num)] supports-[counter-set]:before:content-[counter(num)]"
+            x-data="{ shown: false }"
+            x-intersect="shown = true"
+            :class="shown && '[--num:500]'"
+          >
+            +<span class="supports-[counter-set]:sr-only">500</span>
+          </span>
+          <span
+            class="inline-flex font-semibold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-300 mb-2"
+            >Workshops</span
+          >
+        </h2>
+        <p class="text-sm text-slate-500">
+          Many desktop publishing packages and web page editors now use Pinky as
+          their default model text.
+        </p>
+      </article>
+
+      <article>
+        <h2>
+          <span
+            class="flex tabular-nums text-slate-900 text-5xl font-extrabold mb-2 transition-[_--num] duration-[3s] ease-out [counter-set:_num_var(--num)] supports-[counter-set]:before:content-[counter(num)]"
+            x-data="{ shown: false }"
+            x-intersect="shown = true"
+            :class="shown && '[--num:149]'"
+          >
+            <span class="supports-[counter-set]:sr-only">+5000</span>+
+          </span>
+          <span
+            class="inline-flex font-semibold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-300 mb-2"
+            >Workshops</span
+          >
+        </h2>
+        <p class="text-sm text-slate-500">
+          Many desktop publishing packages and web page editors now use Pinky as
+          their default model text.
+        </p>
+      </article>
+    </section>
+  </div>
+</div>
