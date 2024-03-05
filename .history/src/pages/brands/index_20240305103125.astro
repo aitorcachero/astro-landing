@@ -1,0 +1,15 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Brand from '../../components/Brand.astro';
+import { brands } from '../../helpers/const.js';
+---
+
+<Layout title="Brands – AWWG">
+  <Header img="brands.webp" text="Brands" />
+  {
+    brands.map((brand) => {
+      return <Brand brand={brand} />;
+    })
+  }
+  <div class="h-20"></div>
+</Layout>

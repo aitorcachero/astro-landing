@@ -1,0 +1,46 @@
+---
+import { sections, partners, footer } from '../helpers/const.js';
+---
+
+<footer
+  class="lg:h-96 flex flex-col justify-center items-center gap-10 py-10 lg:p-4"
+  style={{ backgroundColor: '#2E5171' }}
+>
+  <section class="flex flex-row gap-4 lg:gap-10 items-center">
+    {
+      partners.map((partner) => {
+        return (
+          <a href={partner.url}>
+            <img src={partner.img} class="h-10 lg:h-20" />
+          </a>
+        );
+      })
+    }
+  </section>
+  <section class="flex flex-row gap-4 lg:gap-10 items-center justify-center">
+    {
+      sections.map((section) => {
+        return (
+          <a to={section.url}>
+            <h2 class="text-white font-medium text-sm lg:text-xl">
+              {section.name}
+            </h2>
+          </a>
+        );
+      })
+    }
+  </section>
+  <section
+    class="flex flex-row gap-1 p-4 lg:gap-10 items-center justify-center"
+  >
+    {
+      footer.map((section) => {
+        return (
+          <a href={section.url}>
+            <h2 class="text-white text-xs p-1  lg:text-lg">{section.name}</h2>
+          </a>
+        );
+      })
+    }
+  </section>
+</footer>

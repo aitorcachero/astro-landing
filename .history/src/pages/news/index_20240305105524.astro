@@ -1,0 +1,47 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { news } from '../../helpers/const.js';
+import Header from '../../components/Header.astro';
+import NewsComponent from '../../components/NewsComponent.astro';
+---
+
+<Layout title="News – AWWG">
+  <Header img="/news_banner.webp" text="News" />
+  <div class="flex flex-col gap-6 my-10">
+    <h2 class="text-center text-3xl font-semibold">
+      Stay up to date on the latest from AWWG
+    </h2>
+    <p class="text-center">
+      Find everything you need to know about AWWG’s initiatives, collaborations,
+      and announcements as well as the newest information on our brands.
+    </p>
+  </div>+
+  <section class="flex flex-col justify-center items-center gap-6">
+    {
+      news.map((section) => {
+        return <NewsComponent article={section} />;
+      })
+    }
+  </section>
+
+  <footer class="flex flex-col justify-center items-center my-20">
+    <h2 class="font-semibold text-3xl">Contact</h2>
+    <div class="w-[1200px] flex flex-col">
+      <p class="font-bold">AWWG</p>
+      <p>María Maldonado Ureña, External Communication Coordinator</p>
+      <a
+        href="mailto:maria.maldonado@awwg.com"
+        class='hover:underline"'
+        style={{ color: '#355172' }}>maria.maldonado@awwg.com</a
+      >
+      <br />
+      <p class="font-bold">AWWG Press office</p>
+      <p>Weber Shandwick</p>
+      <a
+        href="mailto:AWWGpress@webershandwick.com"
+        class='hover:underline"'
+        style={{ color: '#355172' }}>AWWGpress@webershandwick.com</a
+      >
+    </div>
+  </footer>
+</Layout>

@@ -1,0 +1,29 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { news } from '../../helpers/const.js';
+import Header from '../../components/Header.astro';
+import NewsComponent from '../../components/NewsComponent.astro';
+import Contact from '../../components/Contact.astro';
+---
+
+<Layout title="News – AWWG">
+  <Header img="/news_banner.webp" text="News" />
+  <div class="flex flex-col gap-6 my-10">
+    <h2 class="text-center text-3xl font-semibold">
+      Stay up to date on the latest from AWWG
+    </h2>
+    <p class="text-center">
+      Find everything you need to know about AWWG’s initiatives, collaborations,
+      and announcements as well as the newest information on our brands.
+    </p>
+  </div>+
+  <section class="flex flex-col justify-center items-center gap-6">
+    {
+      news.map((section) => {
+        return <NewsComponent article={section} />;
+      })
+    }
+  </section>
+
+  <Contact />
+</Layout>
