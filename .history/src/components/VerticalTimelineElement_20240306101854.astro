@@ -1,0 +1,43 @@
+---
+const {
+  children = '',
+  className = '',
+  contentArrowStyle = null,
+  contentStyle = null,
+  date = '',
+  dateClassName = '',
+  icon = null,
+  iconClassName = '',
+  iconOnClick = null,
+  onTimelineElementClick = null,
+  iconStyle = null,
+  id = '',
+  position = '',
+  style = null,
+  textClassName = '',
+  intersectionObserverProps = {
+    rootMargin: '0px 0px -40px 0px',
+    triggerOnce: true,
+  },
+  visible = false,
+} = Astro.props;
+
+const positionFunction = () => {
+  if (position === 'left') return 'vertical-timeline-element--left';
+  if (position === 'right') return 'vertical-timeline-element--right';
+  if (position === '') return 'vertical-timeline-element--no-children';
+};
+
+const isVisible = visible ? `bounce-in` : `is-hidden`;
+---
+
+<div class=`${positionFunction()}`>
+  <span class=`vertical-timeline-element-icon ${isVisible}`>
+    <img />
+  </span>
+  <div>
+    <div></div>
+    <div></div>
+    <span></span>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+---
+const {
+  children = '',
+  className = '',
+  contentArrowStyle = null,
+  contentStyle = null,
+  date = '',
+  dateClassName = '',
+  icon = null,
+  iconClassName = '',
+  iconOnClick = null,
+  onTimelineElementClick = null,
+  iconStyle = null,
+  id = '',
+  position = '',
+  style = null,
+  textClassName = '',
+  intersectionObserverProps = {
+    rootMargin: '0px 0px -40px 0px',
+    triggerOnce: true,
+  },
+  visible = false,
+} = Astro.props;
+
+const positionFunction = () => {
+  if (position === 'left') return 'vertical-timeline-element--left';
+  if (position === 'right') return 'vertical-timeline-element--right';
+  if (position === '') return 'vertical-timeline-element--no-children';
+};
+
+const isVisible = visible ? `bounce-in` : `is-hidden`;
+---
+
+<div class="w-full flex flex-col gap-2">
+  <h3
+    class={`vertical-timeline-element-title text-black  text-3xl text-start ${
+      i % 2 === 0 ? 'lg:text-end' : 'lg:text-start'
+    }`}
+  >
+    {element.date}
+  </h3>
+  <div
+    class="w-full h-40 flex items-center justify-center"
+    style={{ backgroundColor: 'white' }}
+  >
+    <img
+      src={element.img}
+      style={{ backgroundColor: 'white' }}
+      class="w-1/2 h-full p-4"
+    />
+  </div>
+  <h4
+    class={`vertical-timeline-element-subtitle text-black text-start ${
+      i % 2 === 0 ? 'lg:text-end' : 'lg:text-start'
+    }`}
+  >
+    {element.text}
+  </h4>
+  <p
+    class={`text-black text-start ${
+      i % 2 === 0 ? 'lg:text-end' : 'lg:text-start'
+    }`}
+  >
+    {element.founded}
+  </p>
+</div>

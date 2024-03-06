@@ -1,0 +1,294 @@
+---
+const {
+  className = 'vertical-timeline-element--work',
+  contentStyle = null,
+  contentArrowStyle = null,
+  date,
+  iconStyle,
+  icon,
+} = Astro.props;
+import './timeline_styles.css';
+---
+
+<div
+  class="vertical-timeline vertical-timeline--animate vertical-timeline--two-columns"
+>
+  <div id="" class="vertical-timeline-element--work vertical-timeline-element">
+    <span
+      class="vertical-timeline-element-icon bounce-in"
+      style="background: white; color: rgb(255, 255, 255); display: flex; align-items: center; justify-content: center;"
+      ><img src="/assets/pepe-jeans-2-DGdJjng0.webp" /></span
+    ><div
+      class="vertical-timeline-element-content bounce-in"
+      style="background: rgb(234, 242, 247); color: blue;"
+    >
+      <div
+        class="vertical-timeline-element-content-arrow"
+        style="border-right: 7px solid rgb(33, 150, 243);"
+      >
+      </div><div class="w-full flex flex-col gap-2">
+        <h3
+          class="vertical-timeline-element-title text-black text-3xl text-start lg:text-end"
+        >
+          1989
+        </h3><div
+          class="w-full h-40 flex items-center justify-center"
+          style="background-color: white;"
+        >
+          <img
+            src="/assets/pepe-jeans-2-DGdJjng0.webp"
+            class="w-1/2 h-full p-4"
+            style="background-color: white;"
+          />
+        </div><h4
+          class="vertical-timeline-element-subtitle text-black text-start lg:text-end"
+        >
+          The iconic brand Pepe Jeans London, starts its distribution in Spain
+          and Portugal.
+        </h4><p class="text-black text-start lg:text-end">Founded in 1973</p>
+      </div><span class="vertical-timeline-element-date">1989</span>
+    </div>
+  </div><div
+    id=""
+    class="vertical-timeline-element--work vertical-timeline-element"
+  >
+    <span
+      class="vertical-timeline-element-icon bounce-in"
+      style="background: white; color: rgb(255, 255, 255); display: flex; align-items: center; justify-content: center;"
+      ><img
+        src="data:image/webp;base64,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"
+      /></span
+    ><div
+      class="vertical-timeline-element-content bounce-in"
+      style="background: rgb(234, 242, 247); color: blue;"
+    >
+      <div
+        class="vertical-timeline-element-content-arrow"
+        style="border-right: 7px solid rgb(33, 150, 243);"
+      >
+      </div><div class="w-full flex flex-col gap-2">
+        <h3
+          class="vertical-timeline-element-title text-black text-3xl text-start lg:text-start"
+        >
+          1998
+        </h3><div
+          class="w-full h-40 flex items-center justify-center"
+          style="background-color: white;"
+        >
+          <img
+            src="data:image/webp;base64,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"
+            class="w-1/2 h-full p-4"
+            style="background-color: white;"
+          />
+        </div><h4
+          class="vertical-timeline-element-subtitle text-black text-start lg:text-start"
+        >
+          The distribution of Tommy Hilfiger in Spain and Portugal is
+          incorporated to the group.
+        </h4><p class="text-black text-start lg:text-start">Founded in 1985</p>
+      </div><span class="vertical-timeline-element-date">1998</span>
+    </div>
+  </div><div
+    id=""
+    class="vertical-timeline-element--work vertical-timeline-element"
+  >
+    <span
+      class="vertical-timeline-element-icon bounce-in"
+      style="background: white; color: rgb(255, 255, 255); display: flex; align-items: center; justify-content: center;"
+      ><img src="/assets/pepe-jeans-2-DGdJjng0.webp" /></span
+    ><div
+      class="vertical-timeline-element-content bounce-in"
+      style="background: rgb(234, 242, 247); color: blue;"
+    >
+      <div
+        class="vertical-timeline-element-content-arrow"
+        style="border-right: 7px solid rgb(33, 150, 243);"
+      >
+      </div><div class="w-full flex flex-col gap-2">
+        <h3
+          class="vertical-timeline-element-title text-black text-3xl text-start lg:text-end"
+        >
+          2002
+        </h3><div
+          class="w-full h-40 flex items-center justify-center"
+          style="background-color: white;"
+        >
+          <img
+            src="/assets/pepe-jeans-2-DGdJjng0.webp"
+            class="w-1/2 h-full p-4"
+            style="background-color: white;"
+          />
+        </div><h4
+          class="vertical-timeline-element-subtitle text-black text-start lg:text-end"
+        >
+          The global Pepe Jeans brand was acquired and the HQ were located in
+          Barcelona and Madrid.
+        </h4><p class="text-black text-start lg:text-end">Founded in 1973</p>
+      </div><span class="vertical-timeline-element-date">2002</span>
+    </div>
+  </div><div
+    id=""
+    class="vertical-timeline-element--work vertical-timeline-element"
+  >
+    <span
+      class="vertical-timeline-element-icon bounce-in"
+      style="background: white; color: rgb(255, 255, 255); display: flex; align-items: center; justify-content: center;"
+      ><img
+        src="data:image/webp;base64,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"
+      /></span
+    ><div
+      class="vertical-timeline-element-content bounce-in"
+      style="background: rgb(234, 242, 247); color: blue;"
+    >
+      <div
+        class="vertical-timeline-element-content-arrow"
+        style="border-right: 7px solid rgb(33, 150, 243);"
+      >
+      </div><div class="w-full flex flex-col gap-2">
+        <h3
+          class="vertical-timeline-element-title text-black text-3xl text-start lg:text-start"
+        >
+          2006
+        </h3><div
+          class="w-full h-40 flex items-center justify-center"
+          style="background-color: white;"
+        >
+          <img
+            src="data:image/webp;base64,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"
+            class="w-1/2 h-full p-4"
+            style="background-color: white;"
+          />
+        </div><h4
+          class="vertical-timeline-element-subtitle text-black text-start lg:text-start"
+        >
+          The Hackett Global brand, with offices in London, was acquired.
+        </h4><p class="text-black text-start lg:text-start">Founded in 1983</p>
+      </div><span class="vertical-timeline-element-date">2006</span>
+    </div>
+  </div><div
+    id=""
+    class="vertical-timeline-element--work vertical-timeline-element"
+  >
+    <span
+      class="vertical-timeline-element-icon is-hidden"
+      style="background: white; color: rgb(255, 255, 255); display: flex; align-items: center; justify-content: center;"
+      ><img src="/assets/ck_logo-CTJG8ehA.webp" /></span
+    ><div
+      class="vertical-timeline-element-content is-hidden"
+      style="background: rgb(234, 242, 247); color: blue;"
+    >
+      <div
+        class="vertical-timeline-element-content-arrow"
+        style="border-right: 7px solid rgb(33, 150, 243);"
+      >
+      </div><div class="w-full flex flex-col gap-2">
+        <h3
+          class="vertical-timeline-element-title text-black text-3xl text-start lg:text-end"
+        >
+          2013
+        </h3><div
+          class="w-full h-40 flex items-center justify-center"
+          style="background-color: white;"
+        >
+          <img
+            src="/assets/ck_logo-CTJG8ehA.webp"
+            class="w-1/2 h-full p-4"
+            style="background-color: white;"
+          />
+        </div><h4
+          class="vertical-timeline-element-subtitle text-black text-start lg:text-end"
+        >
+          The group reaches an agreement with PVH, to become the official
+          distributor of Calvin Klein in Spain and Portugal.
+        </h4><p class="text-black text-start lg:text-end">Founded in 1968</p>
+      </div><span class="vertical-timeline-element-date">2013</span>
+    </div>
+  </div><div
+    id=""
+    class="vertical-timeline-element--work vertical-timeline-element"
+  >
+    <span
+      class="vertical-timeline-element-icon is-hidden"
+      style="background: white; color: rgb(255, 255, 255); display: flex; align-items: center; justify-content: center;"
+      ><img src="/assets/façonnable-logo-brands-BVSQVlZY.webp" /></span
+    ><div
+      class="vertical-timeline-element-content is-hidden"
+      style="background: rgb(234, 242, 247); color: blue;"
+    >
+      <div
+        class="vertical-timeline-element-content-arrow"
+        style="border-right: 7px solid rgb(33, 150, 243);"
+      >
+      </div><div class="w-full flex flex-col gap-2">
+        <h3
+          class="vertical-timeline-element-title text-black text-3xl text-start lg:text-start"
+        >
+          2016
+        </h3><div
+          class="w-full h-40 flex items-center justify-center"
+          style="background-color: white;"
+        >
+          <img
+            src="/assets/façonnable-logo-brands-BVSQVlZY.webp"
+            class="w-1/2 h-full p-4"
+            style="background-color: white;"
+          />
+        </div><h4
+          class="vertical-timeline-element-subtitle text-black text-start lg:text-start"
+        >
+          Façonnable, with offices in Nice, was acquired by the Group.
+        </h4><p class="text-black text-start lg:text-start">Founded in 1950</p>
+      </div><span class="vertical-timeline-element-date">2016</span>
+    </div>
+  </div><div
+    id=""
+    class="vertical-timeline-element--work vertical-timeline-element"
+  >
+    <span
+      class="vertical-timeline-element-icon is-hidden"
+      style="background: white; color: rgb(255, 255, 255); display: flex; align-items: center; justify-content: center;"
+      ><img src="/assets/awwg-uYJ3HODI.svg" /></span
+    ><div
+      class="vertical-timeline-element-content is-hidden"
+      style="background: rgb(234, 242, 247); color: blue;"
+    >
+      <div
+        class="vertical-timeline-element-content-arrow"
+        style="border-right: 7px solid rgb(33, 150, 243);"
+      >
+      </div><div class="w-full flex flex-col gap-2">
+        <h3
+          class="vertical-timeline-element-title text-black text-3xl text-start lg:text-end"
+        >
+          2020
+        </h3><div
+          class="w-full h-40 flex items-center justify-center"
+          style="background-color: white;"
+        >
+          <img
+            src="/assets/awwg-uYJ3HODI.svg"
+            class="w-1/2 h-full p-4"
+            style="background-color: white;"
+          />
+        </div><h4
+          class="vertical-timeline-element-subtitle text-black text-start lg:text-end"
+        >
+          To unify all the brands and teams the name of the Group was changed to
+          AWWG.
+        </h4><p class="text-black text-start lg:text-end"></p>
+      </div><span class="vertical-timeline-element-date">2020</span>
+    </div>
+  </div><div
+    id=""
+    class="vertical-timeline-element vertical-timeline-element--no-children"
+  >
+    <span
+      class="vertical-timeline-element-icon is-hidden"
+      style="background: rgb(16, 204, 82); color: black;"
+      ><img src="/assets/awwg-uYJ3HODI.svg" width="50" /></span
+    ><div class="vertical-timeline-element-content is-hidden">
+      <div class="vertical-timeline-element-content-arrow"></div><span
+        class="vertical-timeline-element-date"></span>
+    </div>
+  </div>
+</div>

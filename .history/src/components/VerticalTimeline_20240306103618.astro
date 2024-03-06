@@ -1,0 +1,13 @@
+---
+const {
+  animate = true,
+  className = '',
+  layout = '2-columns',
+  lineColor = '#000',
+} = Astro.props;
+import './timeline_styles.css';
+---
+
+<div class="'vertical-timeline--two-columns'">
+  <slot />
+</div>

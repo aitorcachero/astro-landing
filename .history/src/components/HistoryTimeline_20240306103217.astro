@@ -1,0 +1,13 @@
+---
+import VerticalTimeline from './VerticalTimeline.astro';
+import './timeline_styles.css';
+import { history } from '../helpers/const.js';
+---
+
+<VerticalTimeline>
+  {
+    history.map((section) => {
+      return <div class="border w-[200px] h-[200px]" />;
+    })
+  }
+</VerticalTimeline>

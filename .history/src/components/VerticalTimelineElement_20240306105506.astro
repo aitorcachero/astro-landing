@@ -1,0 +1,73 @@
+---
+const {
+  children = '',
+  className = '',
+  contentArrowStyle = null,
+  contentStyle = null,
+  date = '',
+  dateClassName = '',
+  icon = null,
+  iconClassName = '',
+  iconOnClick = null,
+  onTimelineElementClick = null,
+  iconStyle = null,
+  id = '',
+  position = '',
+  style = null,
+  textClassName = '',
+  intersectionObserverProps = {
+    rootMargin: '0px 0px -40px 0px',
+    triggerOnce: true,
+  },
+  visible = false,
+  element,
+  i,
+} = Astro.props;
+
+const positionFunction = () => {
+  if (position === 'left') return 'vertical-timeline-element--left';
+  if (position === 'right') return 'vertical-timeline-element--right';
+  if (position === '') return 'vertical-timeline-element--no-children';
+};
+
+const isVisible = visible ? `bounce-in` : `is-hidden`;
+import './timeline_styles.css';
+---
+
+<div id="" class="vertical-timeline-element--work vertical-timeline-element">
+  <span
+    class="vertical-timeline-element-icon bounce-in"
+    style="background: white; color: rgb(255, 255, 255); display: flex; align-items: center; justify-content: center;"
+    ><img src={element.img} /></span
+  ><div
+    class="vertical-timeline-element-content bounce-in"
+    style="background: rgb(234, 242, 247); color: blue;"
+  >
+    <div
+      class="vertical-timeline-element-content-arrow"
+      style="border-right: 7px solid rgb(33, 150, 243);"
+    >
+    </div><div class="w-full flex flex-col gap-2">
+      <h3
+        class={`vertical-timeline-element-title text-black text-3xl text-start ${
+          i % 2 === 0 ? 'lg:text-end' : 'lg:text-start'
+        }`}
+      >
+        {element.date}
+      </h3><div
+        class="w-full h-40 flex items-center justify-center"
+        style="background-color: white;"
+      >
+        <img
+          src={element.img}
+          class="w-1/2 h-full p-4"
+          style="background-color: white;"
+        />
+      </div><h4
+        class="vertical-timeline-element-subtitle text-black text-start lg:text-end"
+      >
+        {element.text}
+      </h4><p class="text-black text-start lg:text-end">{element.founded}</p>
+    </div><span class="vertical-timeline-element-date">{element.text}</span>
+  </div>
+</div>
