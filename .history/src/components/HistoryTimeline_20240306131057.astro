@@ -1,0 +1,14 @@
+---
+import VerticalTimeline from './VerticalTimeline.astro';
+import './timeline_styles.css';
+import { history } from '../helpers/const.js';
+import VerticalTimelineElement from './VerticalTimelineElement.astro';
+---
+
+<VerticalTimeline>
+  {
+    history.map((element, i) => {
+      return <VerticalTimelineElement element={element} i={i} />;
+    })
+  }
+</VerticalTimeline>

@@ -1,0 +1,17 @@
+---
+import VerticalTimeline from './VerticalTimeline.astro';
+import './timeline_styles.css';
+import { history } from '../helpers/const.js';
+import VerticalTimelineElement from './VerticalTimelineElement.astro';
+let observer = new MutationObserver(() => {
+  console.log('Hemos llegado al observer');
+});
+---
+
+<VerticalTimeline>
+  {
+    history.map((element, i) => {
+      return <VerticalTimelineElement element={element} i={i} />;
+    })
+  }
+</VerticalTimeline>

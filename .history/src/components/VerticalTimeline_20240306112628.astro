@@ -11,7 +11,7 @@ import './timeline_styles.css';
 let observer = new MutationObserver(() => {
   console.log('Hemos llegado al observer');
 });
-observer.observe(elem, {
+observer.observe('observer', {
   childList: true,
 });
 ---
@@ -19,7 +19,7 @@ observer.observe(elem, {
 <div
   class="vertical-timeline vertical-timeline--animate vertical-timeline--two-columns"
   style="--line-color: #000;"
-  id="elem"
+  id="observer"
 >
   <slot />
 </div>

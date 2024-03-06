@@ -11,7 +11,7 @@ import './timeline_styles.css';
 let observer = new MutationObserver(() => {
   console.log('Hemos llegado al observer');
 });
-observer.observe(elem, {
+observer.observe('elem', {
   childList: true,
 });
 ---
