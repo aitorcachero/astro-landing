@@ -419,6 +419,6 @@ export {
   DIVISIONS,
   VALUES,
   EXECUTIVE_TEAM,
-  HISTORY,
+  history,
   COUNTER_DATA,
 };

@@ -1,5 +1,5 @@
 ---
-import { DIVISIONS } from '../helpers/const.js';
+import { divisions } from '../helpers/const.js';
 import Button from './Button.astro';
 ---
 
@@ -10,7 +10,7 @@ import Button from './Button.astro';
   class="flex flex-col lg:flex-row justify-center items-center gap-20 my-20"
 >
   {
-    DIVISIONS.map((division) => {
+    divisions.map((division) => {
       return (
         <article class="flex flex-col w-[370px] h-[580px] relative">
           <img src={division.img} class="w-[370px] h-[580px]" />

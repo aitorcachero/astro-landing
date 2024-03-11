@@ -410,15 +410,15 @@ const COUNTER_DATA = [
 ];
 
 export {
-  SECTIONS,
-  PARTNERS,
-  FOOTER,
-  SUSTAINABILITY,
-  NEWS,
-  BRANDS,
-  DIVISIONS,
-  VALUES,
-  EXECUTIVE_TEAM,
-  HISTORY,
+  sections,
+  partners,
+  footer,
+  sustainability,
+  news,
+  brands,
+  divisions,
+  values,
+  executiveTeam,
+  history,
   COUNTER_DATA,
 };

@@ -1,4 +1,4 @@
-const SECTIONS = [
+const sections = [
   { name: 'About us', img: '/about-us-home-1.webp', url: '/about' },
   { name: 'Brands', img: '/about-us-home-1.webp', url: '/brands' },
   {
@@ -10,7 +10,7 @@ const SECTIONS = [
   { name: 'News', img: '/news-home-4.webp', url: '/news' },
 ];
 
-const PARTNERS = [
+const partners = [
   {
     name: 'Pepe Jeans',
     img: '/pepe_jeans-1.webp',
@@ -33,7 +33,7 @@ const PARTNERS = [
   },
 ];
 
-const FOOTER = [
+const footer = [
   {
     name: 'Contact us',
     url: '',
@@ -410,15 +410,15 @@ const COUNTER_DATA = [
 ];
 
 export {
-  SECTIONS,
-  PARTNERS,
-  FOOTER,
-  SUSTAINABILITY,
-  NEWS,
-  BRANDS,
-  DIVISIONS,
-  VALUES,
-  EXECUTIVE_TEAM,
-  HISTORY,
+  sections,
+  partners,
+  footer,
+  sustainability,
+  news,
+  brands,
+  divisions,
+  values,
+  executiveTeam,
+  history,
   COUNTER_DATA,
 };

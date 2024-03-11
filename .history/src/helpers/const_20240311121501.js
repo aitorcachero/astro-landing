@@ -416,9 +416,9 @@ export {
   SUSTAINABILITY,
   NEWS,
   BRANDS,
-  DIVISIONS,
-  VALUES,
-  EXECUTIVE_TEAM,
-  HISTORY,
+  divisions,
+  values,
+  executiveTeam,
+  history,
   COUNTER_DATA,
 };
