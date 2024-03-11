@@ -55,28 +55,25 @@ import './timeline_styles.css';
       >
         {element.date}
       </h3>
-      <div
-        class="w-full h-40 flex items-center justify-center"
+      class="w-full h-40 flex items-center justify-center" style="background-color:
+      white;" >
+      <img
+        src={element.img}
+        class="w-1/2 h-full p-4"
         style="background-color: white;"
-      >
-        <img
-          src={element.img}
-          class="w-1/2 h-full p-4"
-          style="background-color: white;"
-        />
-      </div><h4
-        class={`vertical-timeline-element-subtitle text-black text-start ${
-          i % 2 === 0 ? 'lg:text-end' : 'lg:text-start'
-        }`}
-      >
-        {element.text}
-      </h4><p
-        class={`text-black text-start ${
-          i % 2 === 0 ? 'lg:text-end' : 'lg:text-start'
-        }`}
-      >
-        {element.founded}
-      </p>
-    </div><span class="vertical-timeline-element-date">{element.date}</span>
-  </div>
+      />
+    </div><h4
+      class={`vertical-timeline-element-subtitle text-black text-start ${
+        i % 2 === 0 ? 'lg:text-end' : 'lg:text-start'
+      }`}
+    >
+      {element.text}
+    </h4><p
+      class={`text-black text-start ${
+        i % 2 === 0 ? 'lg:text-end' : 'lg:text-start'
+      }`}
+    >
+      {element.founded}
+    </p>
+  </div><span class="vertical-timeline-element-date">{element.date}</span>
 </div>
