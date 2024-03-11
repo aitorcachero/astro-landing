@@ -44,18 +44,7 @@ import { SECTIONS } from '../helpers/const.js';
   const DATA = document.querySelectorAll('.article');
   DATA.forEach((element) => {
     element.addEventListener('mouseenter', (e) => {
-      const INDEX = element.getAttribute('index');
-      DATA.forEach((article) => {
-        const getIndex = article.getAttribute('index');
-        getIndex !== INDEX
-          ? article.classList.add('gray')
-          : article.classList.remove('gray');
-      });
-    });
-    element.addEventListener('mouseleave', (e) => {
-      DATA.forEach((article) => {
-        article.classList.remove('gray');
-      });
+      console.log(e.target.index);
     });
   });
 </script>

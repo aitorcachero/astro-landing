@@ -53,9 +53,7 @@ import { SECTIONS } from '../helpers/const.js';
       });
     });
     element.addEventListener('mouseleave', (e) => {
-      DATA.forEach((article) => {
-        article.classList.remove('gray');
-      });
+      element.classList.remove('gray');
     });
   });
 </script>

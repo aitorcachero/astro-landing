@@ -1,6 +1,6 @@
 const SECTIONS = [
   { name: 'About us', img: '/about-us-home-1.webp', url: '/about' },
-  { name: 'Brands', img: '/brands-home.webp', url: '/brands' },
+  { name: 'Brands', img: '/about-us-home-1.webp', url: '/brands' },
   {
     name: 'Sustainability',
     img: '/sustainability_portrait.webp',

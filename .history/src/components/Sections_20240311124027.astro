@@ -12,7 +12,7 @@ import { SECTIONS } from '../helpers/const.js';
           href={section.url}
           class="w-[480px] h-[640px] relative overflow-hidden hover:cursor-pointer"
         >
-          <article index={i} class="article">
+          <article index={i}>
             <img
               src={section.img}
               class="w-full h-full hover:scale-110 transition-all"
@@ -40,22 +40,4 @@ import { SECTIONS } from '../helpers/const.js';
   }
 </style>
 
-<script>
-  const DATA = document.querySelectorAll('.article');
-  DATA.forEach((element) => {
-    element.addEventListener('mouseenter', (e) => {
-      const INDEX = element.getAttribute('index');
-      DATA.forEach((article) => {
-        const getIndex = article.getAttribute('index');
-        getIndex !== INDEX
-          ? article.classList.add('gray')
-          : article.classList.remove('gray');
-      });
-    });
-    element.addEventListener('mouseleave', (e) => {
-      DATA.forEach((article) => {
-        article.classList.remove('gray');
-      });
-    });
-  });
-</script>
+<script></script>
