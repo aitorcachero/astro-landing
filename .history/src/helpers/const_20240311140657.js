@@ -163,7 +163,7 @@ const NEWS = [
 
 const BRANDS = [
   {
-    name: 'Pepe Jeans',
+    name: 'Pepe Jeans'
     imgBrand: '/pepe-jeans-2.webp',
     text: [
       'Pepe Jeans London has been at the forefront of internation denim-led fashion for the past 50 years, being able to create an internationally recognized brand with a unique strategy and reputation. This has been possible thanks not only to the great Pepe Jeans team but also to the commitment to create the best possible collections and the most exciting retail environments while remaining sincere to the brand’s DNA and in particular the roots in London’s Portobello Road. Pepe Jeans London has also collaborated with the most iconic celebrities such as Kate Moss, Sienna Miller, Alexa Chung, Cara Delevingne, Georgia Jagger or Dua Lipa, in the hottest multimedia marketing campaigns.',
@@ -176,7 +176,7 @@ const BRANDS = [
     ],
   },
   {
-    name: 'Hackkett London',
+    name: 'Hackkett London'
     imgBrand: '/hackett-london.webp',
     text: [
       'It all started in 1983 when Jeremy Hackett opened his first store selling second-hand clothes on the King’s Road, Chelsea. It was here that he began then creating his own garments, by merging traditional styles with modern cuts, perfect for those seeking the Savile Row style but brought to today: craftsmanship combined with a unique British twist. Hackett has achived that by focusing on its personality, which is what makes it truly unique. Hackett is defined by its excellence and craftsmanship and has its mind set on leaving a mark. Today, Hackett boasts collaborations with like-minded partners such as Aston Martin, Henley Royal Regatta and British Army Polo.',
@@ -204,7 +204,7 @@ const BRANDS = [
     ],
   },
   {
-    name: 'PVH Tommy Hilfiger & Calvin Klein',
+    name: 'PVH Tommy Hilfiger & Calvin Klein'
     imgBrand: '/pvh-logo-brands.webp',
     text: [
       'Tommy Hilfiger is one of the world’s leading designer lifestyle brands and is internationally recognized for celebrating the essence of classic American cool style, featuring preppy with a twist designs. In 1993 Tommy Hilfiger arrives to Europe, settling in Spain with the help of AWWG.',
