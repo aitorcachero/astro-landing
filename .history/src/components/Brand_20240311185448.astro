@@ -25,11 +25,10 @@ import { Image } from 'astro:assets';
         return (
           <>
             <div class="relative">
-              <img
+              <Image
                 src={brand.img}
                 alt="Imagen de la marca correspondiente al artículo"
                 class="lg:w-auto w-full h-56 lg:h-auto p-4 lg:p-0 "
-                loading="lazy"
               />
               <a
                 href={brand.url}
