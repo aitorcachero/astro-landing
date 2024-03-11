@@ -1,0 +1,29 @@
+---
+import { DIVISIONS } from '../helpers/const.js';
+import Button from './Button.astro';
+---
+
+<h1 class="text-3xl font-bold text-center" style={{ color: '#305374' }}>
+  Our divisions
+</h1>
+<section
+  class="flex flex-col lg:flex-row justify-center items-center lg:gap-20 lg:my-20 w-full"
+>
+  {
+    DIVISIONS.map((division) => {
+      return (
+        <article class="flex flex-col w-full lg:w-[370px] h-[580px] relative">
+          <img src={division.img} class="w-[370px] h-[580px]" />
+          <div class="absolute flex flex-col w-[370px] h-[580px] justify-around items-center gap-48">
+            <h2 class="text-white text-3xl font-bold w-[100px] text-center">
+              {division.title}
+            </h2>
+            <a href={division.url}>
+              <Button text="Find more" />
+            </a>
+          </div>
+        </article>
+      );
+    })
+  }
+</section>
